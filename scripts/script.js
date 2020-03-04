@@ -9,10 +9,10 @@ $(document).ready(function() {
   });
 
   // click class
-  // $(".project-menu-btn").click(function() {
-  //   $(".project-menu-btn").removeClass("project-menu-btn-active");
-  //   $(this).addClass("project-menu-btn-active");
-  // });
+  $(document).on("click", ".project-menu-btn", function() {
+    $(".project-menu-btn").removeClass("project-menu-btn-active");
+    $(this).addClass("project-menu-btn-active");
+  });
 
   // read more button
   $(".read-more").on("click", function() {
